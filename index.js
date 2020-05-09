@@ -20,7 +20,7 @@ var questions = [
         name: 'year',
         message: "What's the first registration year?",
         validate: year => {
-            if (year > 1769 && year < new Date().getFullYear()) {
+            if (year > 1769 && year <= new Date().getFullYear()) {
                 return true;
             }
 
